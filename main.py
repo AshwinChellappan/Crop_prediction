@@ -43,8 +43,9 @@ def gfg():
 
 if __name__ == '__main__':
     print('Line 1')
-    df=pd.read_csv('D:\\DataScience\\Projectspace\\Crop_recommendation.csv')
+    # df=pd.read_csv('D:\\DataScience\\Projectspace\\Crop_recommendation.csv')
     # print(df.head())
+    df = pd.read_csv('Crop_recommendation.csv')
     c = df.label.astype('category')
     targets = dict(enumerate(c.cat.categories))
     df['target'] = c.cat.codes
