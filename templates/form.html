@@ -1,42 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Indian Council of Agricultural Research</title>
+
 </head>
-<body>
+<body style="background-color:powderblue;">
 <form action="{{ url_for("gfg")}}" method="post">
-<label for="firstname">UserName :</label>
-<input type="text" id="uName" name="uName" >
-<br>
-<label for="firstname">Phone Number :</label>
-<input type="text" id="pNum" name="pNum" >
-<br>
-<label for="firstname">Nitrogen Content:</label>
-<input type="text" id="firstname" name="ncontent" >
-<br>
-<label for="lastname">Potassium Content:</label>
-<input type="text" id="lastname" name="potcontent" >
-<br>
+<center>
+  </br>
+  <B style="font-size:30px">Indian Council of Agricultural Research</B>
+  </br>
+  <table>
+    <tr>
+      <td align="right">UserName:</td>
+      <td align="left"><input type="text" id="uName" name="uName" /></td>
+    </tr>
+    <tr>
+      <td align="right">Phone Number:</td>
+      <td align="left"><input type="text" id="pNum" name="pNum" /></td>
+    </tr>
+    <tr>
+      <td align="right">Nitrogen Content:</td>
+      <td align="left"><input type="text" id="firstname" name="ncontent" /></td>
+    </tr>
+      <tr>
+      <td align="right">Potassium Content:</td>
+      <td align="left"><input type="text" id="lastname" name="potcontent"  /></td>
+    </tr>
+      <tr>
+      <td align="right">Phosphorous Content:</td>
+      <td align="left"><input type="text" id="Phosphorous" name="poscontent" /></td>
+    </tr>
 
-<label for="lastname">Phosphorous Content:</label>
-<input type="text" id="Phosphorous" name="poscontent" >
-<br>
+      <tr>
+      <td align="right">Temperature:</td>
+      <td align="left"><input type="text" id="temp" name="temp" /></td>
+    </tr>
+      <tr>
+      <td align="right">Humidity:</td>
+      <td align="left"><input id="Humidity" name="humidity" /></td>
+    </tr>
 
-<label for="lastname">Temperature:</label>
-<input type="text" id="temp" name="temp" >
-<br>
-<label for="lastname">Humidity:</label>
-<input type="text" id="Humidity" name="humidity" >
-<br>
-
-<label for="lastname">PH Level:</label>
-<input type="text" id="ph" name="phval" >
-<br>
-
-<label for="lastname">Rainfall:</label>
-<input type="text" id="Rainfall" name="rainfall" >
-<br>
-<button type="submit">submit</button>
+      <tr>
+      <td align="right">PH Level:</td>
+      <td align="left"><input type="text" id="ph" name="phval" /></td>
+    </tr>
+      <tr>
+      <td align="right">Rainfall:</td>
+      <td align="left"><input type="text" id="Rainfall" name="rainfall" /></td>
+    </tr>
+       <tr>
+           <td align="right"><input type="submit" id="submit" name="submit" /></td>
+          <!--<button type="submit">submit</button> -->
+        </tr>
+  </table>
+</center>
+</form>
 </body>
 </html>
